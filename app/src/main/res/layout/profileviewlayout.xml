@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/profilecard"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="140dp"
+        android:elevation="12dp"
+        android:innerRadius="40dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="47dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/profilepicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/upperbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="276dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/profilemessageshape"
+            android:text="FOLLOW" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profilemessageshape"
+            android:layout_weight="1"
+            android:text="MESSAGE"
+            android:drawableLeft="@drawable/ic_message"
+            android:drawablePadding="-50dp"
+            android:paddingLeft="30dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="@id/upperbuttons"
+        app:layout_constraintTop_toBottomOf="@+id/upperbuttons">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/profilemessageshape"
+            android:text="PHOTOS"
+            android:drawableLeft="@drawable/ic_photos"
+            android:paddingLeft="150dp"
+            android:drawablePadding="-170dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/muliregular"
+            android:gravity="center"
+            android:text="SHUBHAM SHARMA"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintEnd_toStartOf="@+id/profilecard"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:height="15dp"
+            android:gravity="center"
+            android:text="306"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/muliregular"
+            android:gravity="center"
+            android:text="FOLLOWERS"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintStart_toEndOf="@+id/profilecard"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:height="15dp"
+            android:gravity="center"
+            android:text="215"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/muliregular"
+            android:gravity="center"
+            android:text="FOLLOWING"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
